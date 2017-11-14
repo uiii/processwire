@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-	    "uiii/pw-core": "dev-master"
+	    "uiii/pw-core": "^1.0"
     }
 }
