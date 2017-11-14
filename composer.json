@@ -8,5 +8,7 @@
             "email": "jedlicka.r@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+	    "uiii/pw-core": "dev-master"
+    }
 }
