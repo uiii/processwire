@@ -1,0 +1,12 @@
+{
+    "name": "uiii/processwire",
+    "type": "pw-core",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Jedlička",
+            "email": "jedlicka.r@gmail.com"
+        }
+    ],
+    "require": {}
+}
