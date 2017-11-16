@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-	    "uiii/pw-core": "^1.0"
+	    "uiii/pw-core": "^1.1"
     }
 }
