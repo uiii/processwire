@@ -32,11 +32,3 @@ Now when you deploy your site, you would install all your dependencies (PW inclu
 ### Updating existing installation
 
 Updating is easy, just require new version: `composer require uiii/processwire:<new-version>`
-
-### Reinstalling
-
-If you need to reinstall PW from scratch, remove the `site/assets/install.php` file and reinstall composer package:
-
-```
-composer remove uiii/processwire
-composer require uiii/processwire:<version>
