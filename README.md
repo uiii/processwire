@@ -1,5 +1,7 @@
 # Composer package for ProcessWire CMS installation
 
+[![Packagist](https://img.shields.io/packagist/v/uiii/processwire.svg)](https://packagist.org/packages/uiii/processwire)
+
 Using this package you can easily install ProcessWire to your project.
 This works differenty from the official [processwire/processwire](https://packagist.org/packages/processwire/processwire) composer package,
 where the official package just places the PW copy into `vendor/processwire/processwire`, this installs the PW directly
