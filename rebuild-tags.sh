@@ -1,3 +1,5 @@
+IFS=$'\r'$IFS
+
 official_tags=$(git ls-remote --tags https://github.com/processwire/processwire | cut -f3 -d"/")
 package_tags=$(git ls-remote --tags https://github.com/uiii/processwire | cut -f3 -d"/")
 local_tags=$(git tag -l)
@@ -15,16 +17,16 @@ echo "$local_tags"
 
 echo "Delete local tags"
 if [ -n "$local_tags" ]; then
-	echo "$local_tags" | xargs git tag -d
+	echo "$local_tags" | sed -e 's/\s+/ /g' | xargs git tag -d
 fi
 
 echo "Delete remote tags"
 if [ -n "$package_tags" ]; then
-	echo "$package_tags" | xargs git push --delete origin
+	echo "$package_tags" | sed -e 's/\s+/ /g' | xargs git push --delete origin
 fi
 
 echo "Create local tags"
-echo "$official_tags" | xargs -n 1 git tag
+echo "$official_tags" | sed -e 's/\s+/ /g' | xargs -n 1 git tag
 
 echo "Push tags"
 git push origin --tags
