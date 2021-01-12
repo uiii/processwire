@@ -44,10 +44,7 @@ Updating is easy, just require new version: `composer require uiii/processwire:<
 By default PW is installed in the root directory (next to the `composer.json` file). You change the install path by setting the `pw-install-path` extra parameter in `composer.json`:
 
 ```json
-{
-	...
-	"extra": {
-		"pw-install-path": "path/to/install"
-	}
+"extra": {
+	"pw-install-path": "path/to/install"
 }
 ```
